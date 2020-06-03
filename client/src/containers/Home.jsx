@@ -27,11 +27,11 @@ class Home extends Component {
   render() {
     return (
       <>
-        <div style={{display: 'flex', width: "100vw"}}>
-          <div style={{flex: 1}}>
+        <div className="container is-fullheight row">
+          <div className="column">
             <ReactForm />
           </div>
-          <div style={{flex: 1}}>
+          <div className="column mt-5 pt-5">
             <div>
               <InputGroup className="mb-3">
                 <InputGroup.Prepend>
@@ -39,11 +39,12 @@ class Home extends Component {
                 </InputGroup.Prepend>
                 <FormControl
                   aria-label="Text input with checkbox"
+                  placeholder="bg-color for div"
                   onChange={this.handleInputChange}
                 />
               </InputGroup>
             </div>
-            <Button bgColor="white">Primary</Button>
+            <button type="button">Primary</button>
             <MyComponent myColor={this.state.div}>Hello World</MyComponent>
           </div>
         </div>
