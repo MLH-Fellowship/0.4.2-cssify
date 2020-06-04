@@ -187,7 +187,8 @@ template {
 :root {
     scroll-behavior: smooth;
     text-rendering: optimizeLegibility;
-    font-size: 1rem
+    font-size: 1rem;
+    --mobile: 768px;
 }
 
 html {
@@ -423,7 +424,7 @@ html {
     width: .01em !important
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:var(--mobile)) {
     .is-hidden-mobile {
         display: none !important
     }
@@ -706,7 +707,7 @@ r-grid>r-cell[colspan=row] {
     grid-column: 1/-1
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:var(--mobile)) {
     r-grid[columns-s="1"] {
         --grid-tc: repeat(1, 1fr)
     }
@@ -1530,7 +1531,7 @@ strong {
     flex: 1 1 0
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:var(--mobile)) {
     .column {
         flex: 1
     }
@@ -1551,7 +1552,7 @@ strong {
 .breakout-wrapper,
 article {
     display: grid;
-    grid-template-columns: [full-start] minmax(1em, 1fr) [content-start] minmax(0, 768px) [content-end] minmax(1em, 1fr) [full-end]
+    grid-template-columns: [full-start] minmax(1em, 1fr) [content-start] minmax(0, var(--mobile)) [content-end] minmax(1em, 1fr) [full-end]
 }
 
 .breakout-wrapper[style*="--breakout-width"] {
@@ -1570,7 +1571,7 @@ article>* {
 section {
     display: flex;
     flex-direction: column;
-    max-width: 768px;
+    max-width: var(--mobile);
     margin: auto;
     padding: 2rem .5rem
 }
