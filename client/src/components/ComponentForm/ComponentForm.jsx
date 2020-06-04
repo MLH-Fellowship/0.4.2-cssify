@@ -11,11 +11,11 @@ const ComponentForm = (props) => {
       <form onChange={setComponent}>
         <label>
           <input type="radio" name="component" value="button" />
-          <span>Button</span>
+          <span>Buttons</span>
         </label>
         <label>
           <input type="radio" name="component" value="card" />
-          <span>Card</span>
+          <span>Headings</span>
         </label>
         <label>
           <input type="radio" name="component" value="alert" />

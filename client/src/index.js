@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
+import "./assets/css/fonts.min.css";
+import "./assets/css/spirit.min.css";
 import App from "./App";
 import { RecoilRoot } from "recoil";
 

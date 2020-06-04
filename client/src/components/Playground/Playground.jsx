@@ -38,7 +38,13 @@ class Playground extends Component {
       <div>
         <div className="banner">
           <h2>Create your own stylesheet.</h2>
-          <Button variant="info">Get CSS!</Button>
+          <button 
+          type="button"
+          className="bg-black white" 
+          style={{
+            height: '60px'
+          }} 
+          >Get CSS!</button>
         </div>
         <ResizablePanels>
           <ComponentForm getComponent={this.getSelectedComponent} />

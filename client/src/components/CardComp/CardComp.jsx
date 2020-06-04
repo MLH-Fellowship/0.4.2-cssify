@@ -1,19 +1,16 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
 
-const CardComp = () => {
+const divComp = () => {
   return (
-    <Card border="primary" style={{ width: "18rem" }}>
-      <Card.Header>Header</Card.Header>
-      <Card.Body>
-        <Card.Title>Primary Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-      </Card.Body>
-    </Card>
+    <>
+      <h1 className="size-1">Heading 1</h1>{" "}
+      <h1 className="size-2">Heading 2</h1>{" "}
+      <h1 className="size-3">Heading 3</h1>{" "}
+      <h1 className="size-4">Heading 4</h1>{" "}
+      <h1 className="size-5">Heading 5</h1>{" "}
+      <h1 className="size-6">Heading 6</h1>{" "}
+    </>
   );
 };
 
-export default CardComp;
+export default divComp;

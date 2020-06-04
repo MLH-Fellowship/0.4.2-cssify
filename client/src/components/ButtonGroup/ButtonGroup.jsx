@@ -3,14 +3,14 @@ import Button from "react-bootstrap/Button";
 const ButtonGroup = () => {
   return (
     <>
-      <Button variant="primary">Primary</Button>{" "}
-      <Button variant="secondary">Secondary</Button>{" "}
-      <Button variant="success">Success</Button>{" "}
-      <Button variant="warning">Warning</Button>{" "}
-      <Button variant="danger">Danger</Button>{" "}
-      <Button variant="info">Info</Button>{" "}
-      <Button variant="light">Light</Button>{" "}
-      <Button variant="dark">Dark</Button> <Button variant="link">Link</Button>
+      <button className="">Primary</button>{" "}
+      <button className="bg-fuchsia white">Secondary</button>{" "}
+      <button className="bg-green white">Success</button>{" "}
+      <button className="bg-yellow white">Warning</button>{" "}
+      <button className="bg-red white">Danger</button>{" "}
+      <button className="bg-blue white">Info</button>{" "}
+      <button className="bg-silver black">Light</button>{" "}
+      <button className="bg-black white">Dark</button>
     </>
   );
 };
